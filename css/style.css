@@ -5,7 +5,8 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 2px solid rgb(61, 3, 3);
+    
+    border: 2px solid rgb(4, 155, 142);
     overflow: hidden;
 }
 .nav>li>a{
@@ -44,4 +45,35 @@
 }
 .dropdown:hover>.dropdown-content{
     display: block;
+}
+.headdiv{
+    background-color:rgb(216, 161, 125);
+    width: 100%;
+    height: 70px;
+    float: left;
+    padding-top: 18px;
+    padding-left: 10px;
+    
+    
+}
+
+.footnav{
+    
+    float: left;
+    width:100%;
+    height:300px;
+    color: rgb(227, 212, 241);
+    font-size:17px;
+    background-color: rgba(39, 1, 1, 0.719);
+    overflow:hidden;
+    padding-left: 150px;
+}
+
+.footnavsocial{
+    margin: 0;
+    padding: 0;
+    
+    float: right;;
+    width:50%;
+    height:200px;
 }
