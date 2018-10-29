@@ -15,7 +15,11 @@
     display: block;
     background-color: rgb(36, 34, 34);
     color: wheat;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    padding-bottom: 4px;
+    /* padding-top: 10px; */
+    padding-top: 4px;
+    
     text-align: center;
 }
 .nav>li>a:hover{
@@ -46,13 +50,16 @@
 .dropdown:hover>.dropdown-content{
     display: block;
 }
+
 .headdiv{
     background-color:rgb(216, 161, 125);
-    width: 100%;
+    width: 100%; 
     height: 70px;
     float: left;
     padding-top: 18px;
     padding-left: 10px;
+ 
+        
     
     
 }
