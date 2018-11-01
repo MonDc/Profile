@@ -6,26 +6,43 @@
     <title>My Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <script src="main.js"></script>
+    <script src="./js/javascript.js"></script>
 </head>
 <body style="background-color: aquamarine">
-    <div class="headdiv"> <img src="montrsr.png" width="19%" height="40px" ></div>
+    <div class="headdiv"> <img src="montrsr.png" onclick="logoClick(this)" width="300px" height="40px" class="active" >     
+    </div>
     
+
     <ul class="nav">
-        <li> <a href="./index.html">Home</a></li>
-        <li> <a href="about.html">About</a></li>
-        <li> <a href="contact.html">Contact</a></li>
-        <li class="dropdown"> <a href="#">En</a>
+        <li > <a href="javascript:void(0);" onclick="homeClick(this)" id="homeClick">Home</a></li>
+        <li> <a href="javascript:void(0);" onclick="aboutClick(this)" id="aboutClick">About</a></li>
+        <li> <a href="javascript:void(0);" onclick="contactClick(this)" id="contactClick">Contact</a></li>
+        <li class="dropdown"> <a href="javascript:void(0);">En</a>
         <div class="dropdown-content">
             <a href="./de/index.html">DE</a>
             </div>
         </li>
 
     </ul>
+
+    <div id="subheadDiv" class="contentDiv" style="";> 
+       <img src="hire_developer.png" width=100%; height=490px />
+       
+    </div>
+
+    <div id="logoDiv" class="contentDiv" style="display:none;">
+        <img src="hire_developer.png" width=100%; height=490px />
+    </div>
+
     
-    <img src="nature.jpg" width=100%; height=520px/>
     
-    <table style="border:1px solid blueviolet; width: 100%; height: 30%;"> 
+    
+    <!-- here we go-->
+
+    <div id="homeDiv" class="contentDiv" style="display: none;"> 
+         <img src="nature.jpg" width=100%; height=520px/>
+
+         <table style="border:1px solid blueviolet; width: 100%; height: 30%;"> 
             <tr>                    
                 <td style="border: 2px solid rgb(3, 129, 119)"> 
                     <ul style = "list-style-type:square;">
@@ -48,13 +65,104 @@
                 </ul>
                 </td>
             </tr>
-    </table>     
-    <div class="footnav"> <br> <br> <br> <br> <br> <br>
-                Home <br>
-                About <br>
-                Skills <br>
-                Education <br>
-                Contact 
+    </table>
+    </div>
+
+    
+    <div id="aboutDiv" class="contentDiv" style="display:none;">
+        <img src="Good-Web-Developer.jpg"width=33.1%; height="250px;">
+        <img src="Good-Web-Developer.jpg"width=33.1%; height="250px;">
+        <img src="Good-Web-Developer.jpg"width=33.2%; height="250px;">
+        <p style="color:brown;font-size: 33px">  About Me </p>
+        <br/>
+        
+        <p style="font-size: 25px"> I graduated from Bonn university with master degree in natural sciences and I did courses
+        <br/> 
+        in computer sciences in my previous university study. I learned a lot of Skills like 
+        <br/>
+        Micorosoft Word, power point, excel, SPSS statistcal programs, gimp 2,
+        <br/>
+    
+        and many software packages for data analysis
+        <br/>
+        I studied also in Hannover university and Freiburg university.
+        <br/>
+        I was inspired by coding programs and application and I am very enthusiastic about working
+        <br/> in web and software develpment.
+        </p>
+    </div>
+
+
+    <div id="contactDiv" class="contentDiv" style="display:none;">
+        <img src="web_developer_icon.jpg"width=33.1%; height="200px;">
+        <img src="web_developer_icon.jpg"width=33.1%; height="200px;">
+        <img src="web_developer_icon.jpg"width=33.2%; height="200px;">
+        <h1> <p style="color: brown;font-size: 26px;"> Contact me </p></h1>
+        Name* 
+        <br/>
+        <p style="font-size:small;"><input type="text" placeholder="Enter your name"size=80px;></p>
+        <br/>
+        Email Address* 
+        <br/>
+        <p style="font-size:small;"><input type="text" placeholder="Enter your email"size=80px;></p>
+        <br/>
+        Subject 
+        <br/>
+        <p style="font-size:small;"><input type="text" title="what is your message about"size=80px;></p>
+        <br/>
+        Message 
+        <br/>
+        <textarea name="Enter your text here!" size= 80px; cols="100" rows="8"></textarea>
+    
+        <br/>
+        <p style="font-size:large; color: brown;">Submit</p>
+    </div>
+
+
+    <!-- End-->
+
+
+
+
+
+
+    <!-- <img src="nature.jpg" width=100%; height=520px/> -->
+    
+
+    <!-- <table style="border:1px solid blueviolet; width: 100%; height: 30%;"> 
+            <tr>                    
+                <td style="border: 2px solid rgb(3, 129, 119)"> 
+                    <ul style = "list-style-type:square;">
+                    <h2><p style="color:saddlebrown; font-size:27px; text-align:left">Skills</p></h2>
+                    <br/>
+                        <li>Office word, excell, power point</li>
+                        <li>Communication</li>
+                        <li>Team-player</li>
+                        <li>On time</li>
+                     </ul>
+                </td>
+                <td style="border: 2px solid rgb(3, 129, 119)">
+                    
+                <ul style="list-style-type:square;">
+                    <h2><p style="color:saddlebrown; font-size:27px; text-align:left">Education</p></h2>
+                    <br/>
+                    <li>Computer sciences</li>
+                    <li>Web development</li>
+                    <li>html, css, Javascript, others</li>
+                </ul>
+                </td>
+            </tr>
+    </table>      -->
+    <div class="footnav"> 
+        <ul>
+            <li>home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Education</li>
+            <li>Contact</li>
+        </ul>
+                
+                 
 
                 <div class="footnavsocial">
                         <img src="twitter.png" width="43px" height="43px" style="border:20px; padding:15px;">
